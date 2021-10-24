@@ -12,10 +12,10 @@
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
-            /*,"group": {
+            ,"group": {
                 "kind": "build",
                 "isDefault": true
-            }*/
+            }
         },
         {
             "label": "publish",
