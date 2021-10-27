@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\asp.nets\\aspdotnetcore\\Catalog\\Catalog.csproj": {}
+    "E:\\ASP.NETS\\aspDotNetCore\\Catalog\\Catalog.csproj": {}
   },
   "projects": {
-    "E:\\asp.nets\\aspdotnetcore\\Catalog\\Catalog.csproj": {
+    "E:\\ASP.NETS\\aspDotNetCore\\Catalog\\Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\asp.nets\\aspdotnetcore\\Catalog\\Catalog.csproj",
+        "projectUniqueName": "E:\\ASP.NETS\\aspDotNetCore\\Catalog\\Catalog.csproj",
         "projectName": "Catalog",
-        "projectPath": "E:\\asp.nets\\aspdotnetcore\\Catalog\\Catalog.csproj",
+        "projectPath": "E:\\ASP.NETS\\aspDotNetCore\\Catalog\\Catalog.csproj",
         "packagesPath": "C:\\Users\\imtia\\.nuget\\packages\\",
-        "outputPath": "E:\\asp.nets\\aspdotnetcore\\Catalog\\obj\\",
+        "outputPath": "E:\\ASP.NETS\\aspDotNetCore\\Catalog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,6 +46,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "mongoDb.driver": {
+              "target": "Package",
+              "version": "[2.13.2, )"
             }
           },
           "imports": [

@@ -27,3 +27,15 @@ E:\asp.nets\aspdotnetcore\Catalog\obj\Debug\net5.0\Catalog.dll
 E:\asp.nets\aspdotnetcore\Catalog\obj\Debug\net5.0\ref\Catalog.dll
 E:\asp.nets\aspdotnetcore\Catalog\obj\Debug\net5.0\Catalog.pdb
 E:\asp.nets\aspdotnetcore\Catalog\obj\Debug\net5.0\Catalog.genruntimeconfig.cache
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\DnsClient.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\MongoDB.Bson.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\MongoDB.Driver.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\SharpCompress.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
