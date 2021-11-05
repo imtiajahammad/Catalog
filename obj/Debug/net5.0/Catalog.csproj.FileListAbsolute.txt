@@ -39,3 +39,6 @@ E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\win\native\snappy64.
 E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\HealthChecks.MongoDb.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+E:\ASP.NETS\aspDotNetCore\Catalog\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
