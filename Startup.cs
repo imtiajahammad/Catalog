@@ -85,7 +85,10 @@ namespace Catalog
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Catalog v1"));
             }
 
-            app.UseHttpsRedirection();
+            if(env.IsDevelopment()){
+                app.UseHttpsRedirection();
+            }
+            
 
             app.UseRouting();
 
@@ -127,3 +130,101 @@ namespace Catalog
         }
     }
 }
+/*
+TO MAKE MONGO DB IMAGE
+
+docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db mongo
+
+docker stop mongo
+
+docker volume ls
+
+docker volume rm mongodbdata 
+
+docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=mongoadmin mongo
+
+ TO MAKE RESTAPI IMAGE:
+
+ * essentials for deployment in production environment:
+    1. Operating System version
+    2. .NET 5 Runtime installed
+    3. Dependencies such as dlls
+    4. Rest API applicaiton
+    5. database requirements such as mongoDbEngine etc.
+
+WHY NOT DOCKER?
+                * Prepare a box
+                                -> Physical machine or virtual machine
+                                -> Linus or Windows, pick the correct OS version
+                * How to take the files to the production machine?
+                                ->through ftp/pendrive etc
+                * What if DB requires different version of OS or dependencies?
+                * What if we want to move to a new version of .NET?
+                * How do we quickly start the REST API on the machine?
+                * What if one instance is not enough to handle the load?
+DOCKER FILE CAN BE A RESCUE:
+                * operating system
+                * .NET/ASP.NET Core Runtime
+                * Dependencies
+                * Where to place the files
+                * How to start the REST API 
+DOCKER LIFE CYCLE:
+                * make a docker image on the Docker Engine using a docker file
+                        ->you can push that image to a Container Registry
+                                ->pull that image to the REST API container into the production environment
+                                        -> not only one single instance of your docker container, you can run multiple instances in produciton environment
+
+DOCKER BENEFITS:
+                * Efficien t resource usage
+                * Fast start
+                * Isolation of each container
+                * Runs anywhere where DockerEngine is available
+                * Scalability
+
+
+
+
+
+control shift p->Docker: Add Docker Files to workspace
+                ->.NET ASP>NET Core
+                ->Linux
+                ->port 80
+                ->add compose files-NO
+
+ 
+---------
+docker build -t catalog:v1 . 
+
+
+docker network create net5tutorial
+
+docker network ls
+
+docker stop mongo
+
+
+docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=mongoadmin  --network=net5tutotial mongo
+
+docker images
+
+docker run -it --rm -p 8080:80 -e MongoDbSettings:Host=mongo -e MongoDbSettings:Password=mongoadmin  --network=net5tutorial catalog:v1
+
+
+
+
+--------------------------------------------------------push your image to dub
+-- push the api image to dockerHub
+docker login
+
+docker tag catalog:v1 imtiaj/catalog:v1
+
+
+docker push imtiajahammad/cataqlog:v1
+
+-- push the api image to dockerHub
+
+--pulling the api image only
+docker logout
+docker run -it --rm -p 8080:80 -e MongoDbSettings:Host=mongo -e MongoDbSettings:Password=mongoadmin  --network=net5tutorial imtiajahammad/catalog:v1
+--pulling the api image only
+*/
